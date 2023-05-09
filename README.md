@@ -11,7 +11,7 @@ Blogtizen is a simple blog made with Laravel framework. You can make your own bl
 
 ## Simple Installation
 
-1. First, clone this repo `git clone [url]`
+1. First, clone this repo `git clone https://github.com/themedesu/blogtizen.git`
 
 2. Make sure your database environment already to use.
 
