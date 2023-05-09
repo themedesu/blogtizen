@@ -5,26 +5,10 @@ namespace App\Http\Controllers\Front;
 use App\Http\Controllers\Controller;
 use App\Models\Article;
 use App\Models\Tag;
-use Illuminate\Http\Request;
 use View;
 
 class ArticleController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index(Request $request)
-    {
-        $metaTitle = 'Artikel';
-        $query = $request->input('query');
-        $showMax = config('app.show_max');
-        $articles = Article::where('title', 'LIKE', "%{$query}%")->orderBy('created_at', 'desc')->paginate($showMax ? $showMax : 6);
-        $articles = $articles->appends(['query' => $query]);
-        return View::make("pages.front.article.index", compact('metaTitle', 'articles'));
-    }
-
     /**
      * Display the specified resource.
      *

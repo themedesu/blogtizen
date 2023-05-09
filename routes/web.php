@@ -77,7 +77,6 @@ Route::name('admin.')->prefix('admin')->group(function () {
 // Front
 Route::name('front.')->middleware(['visitors'])->group(function () {
     Route::get('/', [FrontHomeController::class, 'index'])->name('home.index');
-    Route::get('article', [FrontArticleController::class, 'index'])->name('article.index');
     Route::get('article/{slug}', [FrontArticleController::class, 'show'])->name('article.show');
     Route::get('tag/{slug}', [FrontTagController::class, 'show'])->name('tag.show');
     Route::get('page/{slug}', [FrontPageController::class, 'show'])->name('page.show');
