@@ -1,6 +1,6 @@
 @if (isset($articles))
     <h2 class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-3 rounded-pill px-3 fs-4">
-        <span class="text-success"><i class="bi bi-newspaper me-1"></i> Article</span>
+        <span class="text-dark"><i class="bi bi-newspaper me-1"></i> Article</span>
         @if (isset($isArticleIndex))
             <form class="col-lg-3" method="GET">
                 <input type="search" class="form-control form-search rounded-20 px-3" name="search" placeholder="Search article..." value="{{ request()->get('search') }}" aria-label="Search">
@@ -12,7 +12,7 @@
                 </span>
             @else
                 <a href="{{route('front.article.index')}}">
-                    <span class="badge bg-light rounded-pill py-2 px-3 font-size-14 text-success">
+                    <span class="badge bg-light rounded-pill py-2 px-3 font-size-14 text-dark">
                         <i class="bi bi-folder2-open"></i>
                         <span class="d-none">View all</span>
                     </span>
@@ -29,7 +29,7 @@
                     </a>
                     <div class="article-body card-body">
                         <div class="article-title">
-                            <a href="{{$article->url}}" class="text-success text-decoration-none">
+                            <a href="{{$article->url}}" class="text-dark text-decoration-none">
                                 <h3 class="fs-5 mb-0">{{$article->title_slice}}</h3>
                             </a>
                         </div>

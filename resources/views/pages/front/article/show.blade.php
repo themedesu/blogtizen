@@ -39,7 +39,7 @@
                                 Tag: 
                                 @foreach ($article->tagArticles as $tagArticle)
                                     <a href="{{$tagArticle->tag->url}}">
-                                        <span class="badge bg-light rounded-pill py-2 px-3 font-size-13 text-success ms-1 mb-1">
+                                        <span class="badge bg-light rounded-pill py-2 px-3 font-size-13 text-dark ms-1 mb-1">
                                             <i class="bi bi-tag"></i> {{$tagArticle->tag->name}}
                                         </span>
                                     </a>

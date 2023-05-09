@@ -77,7 +77,7 @@ class ArticleController extends Controller
 
         $article = Article::create($data);
 
-        if ($request->tags) {
+        if (isset($request->tags) || $request->tags != '') {
             $tags = $request->tags;
             foreach ($tags as $key => $tag) {
                 $tagArticle['tag_id'] = $tags[$key];
@@ -130,7 +130,7 @@ class ArticleController extends Controller
 
         TagArticle::where('article_id', $article->id)->forceDelete();
 
-        if ($request->tags) {
+        if (isset($request->tags) || $request->tags != '') {
             $tags = $request->tags;
             foreach ($tags as $key => $tag) {
                 $tagArticle['tag_id'] = $tags[$key];
@@ -154,7 +154,7 @@ class ArticleController extends Controller
             $data['messages'] = 'Deleted successfully';
             $data['type'] = 'success';
 
-        } catch (\Exception$e) {
+        } catch (\Exception $e) {
             $data['messages'] = $e->getMessage();
             $data['type'] = 'warning';
         }

@@ -4,7 +4,7 @@
             <h2 class="mb-3"><i class="bi bi-tags"></i> Tag</h2>
             @forelse ($tags as $tag)
                 <a href="{{$tag->url}}">
-                    <span class="badge bg-light rounded-pill py-2 px-3 font-size-13 text-success me-1 mb-1">
+                    <span class="badge bg-light rounded-pill py-2 px-3 font-size-13 text-dark me-1 mb-1">
                         <i class="bi bi-tag"></i> {{$tag->name}}
                     </span>
                 </a>

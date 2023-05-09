@@ -49,7 +49,7 @@
                                 @forelse ($tags as $tag)
                                     <option value="{{$tag->id}}">{{$tag->name}}</option>
                                 @empty
-                                    <option>Tag not found</option>
+                                    <div>Tag not found</div>
                                 @endforelse
                             </select>
                         </div>
