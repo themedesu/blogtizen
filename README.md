@@ -13,21 +13,19 @@ Blogtizen is a simple blog made with Laravel framework. You can make your own bl
 
 1. First, clone this repo `git clone https://github.com/themedesu/blogtizen.git`
 
-2. Make sure your database environment already to use.
+2. Move to the terminal. Copy `.env.example` to `.env` in your project directory and set up the environtment with your
 
-3. Copy `.env.example` to `.env` in your project directory
+3. Then, install the packages. Run `composer install`
 
-4. Setup with your database environtment
+4. Then, generate the key for the app. Run `php artisan key:generate`
 
-5. Move to the terminal, `composer install`
+5. Then, link storage for the assets. Run `php artisan storage:link`
 
-6. Then, run `php artisan key:generate`
+6. Then, migrate the database and seed. Run `php artisan migrate:refresh --seed`
 
-7. Then, run `php artisan migrate:refresh --seed`
+7. Finally, run `php artisan serve` to start your development
 
-8. Finally, run `php artisan serve`
-
-Now move to browser, input your laravel local development `http://localhost:8000/` 
+Now move to browser, input your laravel local development. E.g `http://localhost:8000/` 
 
 ## Login Credential
 
