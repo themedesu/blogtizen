@@ -15,9 +15,9 @@ return [
 
     'name' => env('APP_NAME', 'Themedesu'),
 
-    'desc' => env('APP_DESC', 'APP_DESC="Our open source blog project is a user-friendly tool for bloggers of all levels. With our intuitive interface and customizable features, you can easily create, edit, and publish engaging content that resonates with your audience.'),
+    'desc' => env('APP_DESC', 'Blogging made open source and easy.'),
 
-    'slogan' => env('APP_SLOGAN', 'Blogging made open source and easy'),
+    'slogan' => env('APP_SLOGAN', 'Blogging made open source and easy.'),
 
     'logo' => env('APP_LOGO', 'https://raw.githubusercontent.com/themedesu/.github/main/assets/logo/THEMEDESU.png'),
 
