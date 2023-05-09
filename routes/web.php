@@ -11,6 +11,7 @@ use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Front\ArticleController as FrontArticleController;
 use App\Http\Controllers\Front\HomeController as FrontHomeController;
 use App\Http\Controllers\Front\PageController as FrontPageController;
+use App\Http\Controllers\Front\RSSFeedController as FrontRSSFeedController;
 use App\Http\Controllers\Front\TagController as FrontTagController;
 use Illuminate\Support\Facades\Route;
 
@@ -77,6 +78,7 @@ Route::name('admin.')->prefix('admin')->group(function () {
 // Front
 Route::name('front.')->middleware(['visitors'])->group(function () {
     Route::get('/', [FrontHomeController::class, 'index'])->name('home.index');
+    Route::get('/feed', [FrontRSSFeedController::class, 'index'])->name('feed.index');
     Route::get('article/{slug}', [FrontArticleController::class, 'show'])->name('article.show');
     Route::get('tag/{slug}', [FrontTagController::class, 'show'])->name('tag.show');
     Route::get('page/{slug}', [FrontPageController::class, 'show'])->name('page.show');
