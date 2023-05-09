@@ -1,0 +1,29 @@
+/*!
+ * Themedesu - Blogtizen v.1.0.0 (https://links.themedesu.com/blogtizen)
+ * Copyright 2020-2023 Themedesu
+ * Licensed under MIT (https://github.com/themedesu/blogzizen/blob/master/LICENSE)
+ */
+
+/*!
+ * THIS APPLICATION ALSO CONTAINING THIRD-PARTY MODULES AND COMPONENTS FROM OTHER 
+ * OPEN SOURCE SOFTWARE, PLEASE READ EACH LICENCE BELOW
+ */
+
+/*!
+ * Start Bootstrap - SB Admin 2 v4.1.3 (https://startbootstrap.com/theme/sb-admin-2)
+ * Copyright 2013-2021 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-sb-admin-2/blob/master/LICENSE)
+ */
+ 
+/*!
+ * Bootstrap v5.2.3 (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+/*!
+ * Bootstrap Icons (https://icons.getbootstrap.com/)
+ * Copyright 2019-2023 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/icons/blob/main/LICENSE.md)
+ */
