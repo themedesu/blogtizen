@@ -3,8 +3,8 @@
 Blogtizen is a simple blog made with Laravel framework. You can make your own blog or starting for new project with Blogtizen as a template. See the demo to know all features
 
 ## Version
-- Blogtizen: 1.0.0
-- Laravel: 8.x
+- Blogtizen: [See release version here](https://github.com/themedesu/blogtizen/releases)
+- Laravel: 8.0
 
 ## System Required
 - PHP: 8.0 or higher
